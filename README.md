@@ -40,4 +40,30 @@ We use @app.route('/api/math_problem', methods=['GET']) to define an API endpoin
 2. Building the Frontend: HTML + Three.js for Visual Learning
 The frontend of this platform will leverage Three.js for 3D rendering, with visual learning techniques for interactive math problem-solving.
 
-** index.html **
+** index.html(Home Page), dashboard.html(Math Dashboard),app.js(Three.js 3D Visualization & Problem Generation) **
+
+Key Features in this Setup:
+Three.js Integration:
+
+The initThreeJS function initializes a basic 3D scene with a rotating cube. This can be expanded to visualize various math concepts (e.g., fractions as parts of a whole, geometry, etc.).
+animate() continuously updates the 3D scene, rotating the cube to keep the user engaged.
+Math Problem Display:
+
+generateProblem() calls the backend /api/math_problem to get a new math problem and displays it dynamically in the dashboard. This makes the learning process interactive by providing a new challenge with each click.
+Dynamic Interactivity:
+
+You can enhance the 3D scene further by adding more interactive elements such as sliders, draggable objects, or graphs that children can manipulate to visualize math operations like addition, subtraction, multiplication, and division.
+
+3. Styling (CSS) - ** styles.css **
+
+In styles.css, ensure you have a clean, child-friendly interface.
+
+4. Enhancements and Future Extensions:
+Level-based Problem Generation: Add complexity to math problems based on the student’s grade level.
+Interactive 3D Geometry: Use 3D shapes (spheres, pyramids) to explain geometric concepts.
+Gamification: Add a scoring system, challenges, and levels for extra motivation.
+API Integration: You can extend the backend to use educational APIs like Khan Academy for pre-built lesson content.
+
+Conclusion:
+This platform allows for dynamic problem generation, 3D visual learning, and a user-friendly interface. The approach to breaking down math problems into visual components makes it engaging for visual learners.
+
